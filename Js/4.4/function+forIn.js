@@ -3,7 +3,7 @@ let info = {
   personagem: "Margarida",
   origem: "Pato Donald",
   nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
-};
+}
 //Ex 1 Imprima no console uma mensagem de boas-vindas para a personagem acima, incluindo seu nome.
 console.log("boas-vindas " + info['personagem'] + "!");
 console.log("boas-vindas " + info.personagem + "!");
@@ -27,10 +27,11 @@ let info2 = {
 }
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //Funções
+//Ex 1 Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
 function palindromo(word) {
   let result = false;
-  let isPalin = ""; 
-  for (let index = word.length -1; index  >= 0; index -= 1) {
+  let isPalin = "";
+  for (let index = word.length - 1; index >= 0; index -= 1) {
     isPalin += word[index];
   }
   if (word === isPalin) {
@@ -39,3 +40,14 @@ function palindromo(word) {
   return result;
 }
 console.log(palindromo("arara"));
+//Ex 2 Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+function higherNumberIndex(numbers) {
+  let result = 0;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if ( result < numbers[index]) {
+      result = index;
+    }
+  }
+  return result;
+}
+console.log(higherNumberIndex([2, 3, 6, 7, 10, 1]));
