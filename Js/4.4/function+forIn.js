@@ -44,10 +44,20 @@ console.log(palindromo("arara"));
 function higherNumberIndex(numbers) {
   let result = 0;
   for (let index = 0; index < numbers.length; index += 1) {
-    if ( result < numbers[index]) {
+    if (result < numbers[index]) {
       result = index;
     }
   }
   return result;
 }
 console.log(higherNumberIndex([2, 3, 6, 7, 10, 1]));
+//Ex 3 Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+function lowerNumberIndex(numbers) {
+  let result = 100000000;
+  for (let index = 0; index < numbers.length; index += 1) {
+    if (result > numbers[index]) {
+      result = index;
+    }
+  }
+}
+console.log(lowerNumberIndex([2, 4, 6, 7, 10, 0, -3]));
