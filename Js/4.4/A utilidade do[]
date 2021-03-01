@@ -1,0 +1,11 @@
+ao utilizar um For IN o [] pode ser utilizado para acessar as propriedade do meu objeto por exemplo:
+let estudante ={
+    nome: "Guilherme",
+    sobrenome: "Caixeta"
+} 
+for(let key in estudante){
+    estudante[key]
+}
+ desta forma estarei acessando o conteudo do meu objeto, no caso estarei retornando:
+ Guilherme
+ Caixeta
