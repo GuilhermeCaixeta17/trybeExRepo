@@ -1,0 +1,3 @@
+=  -----> Atribuicao de valores
+== -----> Compara os valores
+=== ----> Compara o tipo de variaveis e valores 
